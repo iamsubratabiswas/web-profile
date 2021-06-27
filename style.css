@@ -1,0 +1,99 @@
+body{
+    /* to avoid default margin of browser */
+    margin: 0px;
+    /* font family in body tag to give it complete website  */
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+.orange{
+    color: orange;
+}
+.half{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+.half img{
+    width: 100%; /*img tag inside half class takes 100% of that div*/
+}
+
+.banner{
+    height: 600px;
+    background-image: url("images/banner.png");
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+}
+
+.linkbtn{
+    text-decoration: none; /*to remove by default uderscore of anchor link*/
+
+    /*
+    to give color gradient we use here background-image with 2 or 3 value instead
+     background-color: orange; 
+     deg select gradient =>optional
+     */
+     background-image: linear-gradient(45deg, lightsalmon ,tomato );
+    padding: 10px 20px; 
+    border-radius: 10px;
+    color: white;
+    font-weight: 700px;
+    position: sticky;
+    top: 0px;
+}
+
+
+.linkbtn:hover{
+    padding: 10px 30px;
+}
+a:visited{
+    color: darkmagenta;
+
+}
+
+.sep{
+    position: relative;
+    left: 80px;
+}
+ .second-banner{
+    height: 650px;
+     background-image: url("images/banner2.png");
+     background-repeat: no-repeat;
+     background-position: right;
+     position: relative;
+ }
+ .shadow{
+     box-shadow: 10px 10px 40px violet;  
+     /* at least two value (right, down,spreading, color) */
+     border-radius: 5px;
+     /* height: 75%;*/
+ }
+ .experience{
+     height: 520px;
+     background-image: url("images/banner3.png");
+     background-repeat: no-repeat;
+     background-position: left;
+ }
+
+ #full{
+     border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon,tomato);
+   border-image-slice: 1;
+   background-color: white;
+ }
+
+ #baby{
+     border-left: 7px solid;
+     border-image: linear-gradient(180deg, blue,cyan);
+   border-image-slice: 1;
+}
+
+footer p{
+    text-align: center;
+    font-size: 14px;
+}
